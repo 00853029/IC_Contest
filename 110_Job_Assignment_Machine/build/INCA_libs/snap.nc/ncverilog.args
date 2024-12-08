@@ -1,0 +1,13 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+/home/JengDeChang/IC_Contest/110_Job_Assignment_Machine/sim/tb.sv
+/home/JengDeChang/IC_Contest/110_Job_Assignment_Machine/src/JAM_areaFail.v
+/home/JengDeChang/IC_Contest/110_Job_Assignment_Machine/src/JAM＿timingFail.v
+/home/JengDeChang/IC_Contest/110_Job_Assignment_Machine/src/JAM.v
++incdir+/home/JengDeChang/IC_Contest/110_Job_Assignment_Machine/src
++nc64bit
++access+r
++define+P1
++define+FSDB_FILE=\"JAM.fsdb\"

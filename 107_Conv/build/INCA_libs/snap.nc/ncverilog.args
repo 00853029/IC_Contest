@@ -1,0 +1,9 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+../testfixture.v
+../CONV.v
++nc64bit
++access+r
++define+FSDB_FILE=\"CONV.fsdb\"

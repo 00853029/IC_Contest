@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : JAM
+Version: T-2022.03
+Date   : Mon Feb 19 19:06:05 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: Cost[1] (input port clocked by CLK)
+  Endpoint: tempCost_reg[10]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  JAM                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (fall edge)                    5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  input external delay                     0.00       5.50 f
+  Cost[1] (in)                             0.00       5.50 f
+  add_61_S2/B[1] (JAM_DW01_add_0)          0.00       5.50 f
+  add_61_S2/U1_1/CO (ADDFXL)               0.69       6.19 f
+  add_61_S2/U1_2/CO (ADDFXL)               0.53       6.72 f
+  add_61_S2/U1_3/CO (ADDFXL)               0.53       7.25 f
+  add_61_S2/U1_4/CO (ADDFXL)               0.53       7.77 f
+  add_61_S2/U1_5/CO (ADDFXL)               0.53       8.31 f
+  add_61_S2/U1_6/CO (ADDFX2)               0.44       8.75 f
+  add_61_S2/U5/Y (AND2X2)                  0.27       9.02 f
+  add_61_S2/U6/Y (AND2X2)                  0.25       9.27 f
+  add_61_S2/U8/Y (NAND2X1)                 0.18       9.45 r
+  add_61_S2/U7/Y (XNOR2X1)                 0.25       9.71 r
+  add_61_S2/SUM[10] (JAM_DW01_add_0)       0.00       9.71 r
+  U370/Y (OAI2BB2XL)                       0.33      10.03 r
+  tempCost_reg[10]/D (DFFRX1)              0.00      10.03 r
+  data arrival time                                  10.03
+
+  clock CLK (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  tempCost_reg[10]/CK (DFFRX1)             0.00      10.40 r
+  library setup time                      -0.29      10.11
+  data required time                                 10.11
+  -----------------------------------------------------------
+  data required time                                 10.11
+  data arrival time                                 -10.03
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+1

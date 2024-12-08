@@ -1,0 +1,11 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Mar 26, 2024 at 17:21:39 CST
+ncverilog
+	../testfixture.v
+	../CONV.v
+	+nc64bit
+	+access+r
+	+define+FSDB_FILE="CONV.fsdb"
+ncverilog: *E,FILEMIS: Cannot find the provided file ../testfixture.v.
+ncverilog: *E,FILEMIS: Cannot find the provided file ../CONV.v.
+TOOL:	ncverilog	15.20-s084: Exiting on Mar 26, 2024 at 17:21:39 CST  (total: 00:00:00)
